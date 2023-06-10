@@ -82,9 +82,7 @@ function App() {
           </p>
           <p className="checkbox">
             <span className="title">Checkbox : </span> {`[ `}
-            {checkbox.map((isChecked, index) => (
-              <span key={index}>{isChecked ? `${index+1}  ` : ''}</span>
-            ))}
+            {checkbox.map((isChecked, index) => (isChecked ? `${index + 1}, ` : ''))}
             {`]`}
           </p>
         </div>
